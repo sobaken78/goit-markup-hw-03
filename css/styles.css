@@ -14,7 +14,8 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
 }
-section {
+section,
+footer {
   width: 1600px;
   margin: 0 auto;
 }
@@ -80,10 +81,11 @@ section {
 /* Header Styles */
 
 .header {
+  border-bottom: 1px solid #ececec;
 }
 
 .header--container {
-  padding: 24px 0 24px;
+  padding: 24px;
   display: flex;
   align-items: center;
 }
@@ -305,8 +307,12 @@ section {
 
 /* Portfolio Styles */
 
-.portfolio-item {
-  color: var(--text-color);
+.portfolio-button-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 575px;
+  margin: 94px auto 34px auto;
 }
 
 .portfolio-button {
@@ -328,10 +334,33 @@ section {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  margin-bottom: 94px;
+}
+
+.portfolio-card {
+  border: 1px solid #eeeeee;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.portfolio-item {
+  color: var(--text-color);
+}
+
 .hover-accent:hover,
 .hover-accent:focus,
 .current {
   color: var(--accent-color);
+}
+
+.portfolio-img {
+  margin-bottom: 20px;
 }
 
 .project--title {
@@ -339,6 +368,8 @@ section {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  margin-left: 24px;
 }
 
 .project--description {
@@ -347,4 +378,6 @@ section {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
