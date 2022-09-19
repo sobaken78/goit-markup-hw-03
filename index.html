@@ -19,50 +19,52 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <section class="header">
-        <div class="container header--container">
-          <nav class="navigation">
-            <a class="link logo logo--header" lang="en" href="./index.html"
-              ><span class="logo-blue">Web</span
-              ><span class="logo-black">Studio</span></a
-            >
-            <ul class="list menu-link header--navigation">
-              <li class="menu-item">
-                <a
-                  class="link menu-link hover-accent hover-accent current"
-                  href="./index.html"
-                  >Студія</a
-                >
-              </li>
-              <li class="link menu-item">
-                <a class="link menu-link hover-accent" href="./portfolio.html"
-                  >Портфоліо</a
-                >
-              </li>
-              <li class="menu-item menu-link">
-                <a class="link menu-link hover-accent" href="">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="list header--contacts">
-            <li>
+    <header class="header-border">
+      <div class="container header header--container">
+        <nav class="navigation">
+          <a class="link logo logo--header" lang="en" href="./index.html"
+            ><span class="logo-blue">Web</span
+            ><span class="logo-black">Studio</span></a
+          >
+          <ul class="list menu-link header--navigation">
+            <li class="menu-item studio-link">
               <a
-                class="link menu-link e-mail hover-accent"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+                class="link menu-link hover-accent hover-accent current header-item"
+                href="./index.html"
+                >Студія</a
               >
             </li>
-            <li>
+            <li class="link menu-item portfolio-link">
               <a
-                class="link tel menu-link hover-accent"
-                href="tel:+380961111111"
-                >+38 096 111 11 11</a
+                class="link menu-link hover-accent header-item"
+                href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="menu-item menu-link">
+              <a class="link menu-link hover-accent header-item" href=""
+                >Контакти</a
               >
             </li>
           </ul>
-        </div>
-      </section>
+        </nav>
+        <ul class="list header--contacts">
+          <li class="mail">
+            <a
+              class="link menu-link e-mail hover-accent header-item"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="link tel menu-link hover-accent header-item"
+              href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -74,9 +76,9 @@
         </div>
       </section>
 
-      <section>
+      <section class="features">
         <div class="container">
-          <h2 class="hidden-header" hidden>Особливості</h2>
+          <h2 class="hidden-header">Особливості</h2>
           <ul class="list features--list">
             <li class="features--textbox">
               <h3 class="features--heading">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -109,7 +111,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="whatWeDo">
         <div class="container">
           <h2 class="header-whatWeDo">Чим ми займаємося</h2>
           <ul class="list whatWeDo--list">
@@ -153,8 +155,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team--name">Ігор Дем'яненко</h3>
-              <p class="team--position" lang="en">Product Designer</p>
+              <div class="team-card-content">
+                <h3 class="team--name">Ігор Дем'яненко</h3>
+                <p class="team--position" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="team-card">
               <img
@@ -164,8 +168,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team--name">Ольга Рєпіна</h3>
-              <p class="team--position" lang="en">Frontend Developer</p>
+              <div class="team-card-content">
+                <h3 class="team--name">Ольга Рєпіна</h3>
+                <p class="team--position" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-card">
               <img
@@ -175,8 +181,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team--name">Микола Тарасов</h3>
-              <p class="team--position" lang="en">Marketing</p>
+              <div class="team-card-content">
+                <h3 class="team--name">Микола Тарасов</h3>
+                <p class="team--position" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="team-card">
               <img
@@ -186,8 +194,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team--name">Михайло Єрмаков</h3>
-              <p class="team--position" lang="en">UI Designer</p>
+              <div class="team-card-content">
+                <h3 class="team--name">Михайло Єрмаков</h3>
+                <p class="team--position" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -202,7 +212,7 @@
         >
         <address class="address footer-container">
           <ul class="list">
-            <li>
+            <li class="footer-item">
               <a
                 class="link hover-accent footer-adress"
                 href="https://goo.gl/maps/aZbUZKuxEZaQQ34E9"
@@ -211,7 +221,7 @@
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li>
+            <li class="footer-item">
               <a
                 class="link hover-accent footer-mail"
                 href="mailto:info@example.com"

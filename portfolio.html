@@ -19,55 +19,55 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <section class="header">
-        <div class="container header--container">
-          <nav class="navigation">
-            <a class="link logo logo--header" lang="en" href="./index.html"
-              ><span class="logo-blue">Web</span
-              ><span class="logo-black">Studio</span></a
-            >
-            <ul class="list menu-link header--navigation">
-              <li class="menu-item">
-                <a
-                  class="link menu-link hover-accent hover-accent"
-                  href="./index.html"
-                  >Студія</a
-                >
-              </li>
-              <li class="link menu-item">
-                <a
-                  class="link menu-link hover-accent current"
-                  href="./portfolio.html"
-                  >Портфоліо</a
-                >
-              </li>
-              <li class="menu-item menu-link">
-                <a class="link menu-link hover-accent" href="">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="list header--contacts">
-            <li>
+    <header class="header-border">
+      <div class="container header header--container">
+        <nav class="navigation">
+          <a class="link logo logo--header" lang="en" href="./index.html"
+            ><span class="logo-blue">Web</span
+            ><span class="logo-black">Studio</span></a
+          >
+          <ul class="list menu-link header--navigation">
+            <li class="menu-item studio-link">
               <a
-                class="link menu-link e-mail hover-accent"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+                class="link menu-link hover-accent hover-accent current header-item"
+                href="./index.html"
+                >Студія</a
               >
             </li>
-            <li>
+            <li class="link menu-item portfolio-link">
               <a
-                class="link tel menu-link hover-accent"
-                href="tel:+380961111111"
-                >+38 096 111 11 11</a
+                class="link menu-link hover-accent header-item"
+                href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="menu-item menu-link">
+              <a class="link menu-link hover-accent header-item" href=""
+                >Контакти</a
               >
             </li>
           </ul>
-        </div>
-      </section>
+        </nav>
+        <ul class="list header--contacts">
+          <li class="mail">
+            <a
+              class="link menu-link e-mail hover-accent header-item"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="link tel menu-link hover-accent header-item"
+              href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
-      <section>
+      <section class="portfolio-content">
         <div class="container">
           <ul class="list portfolio-button-list">
             <li>
@@ -101,8 +101,10 @@
                   width="370"
                   height="294"
                 />
-                <h3 class="project--title">Технокряк</h3>
-                <p class="project--description">Веб-сайт</p>
+                <div class="portfolio-card-content">
+                  <h3 class="project--title">Технокряк</h3>
+                  <p class="project--description">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-card">
@@ -114,10 +116,12 @@
                   width="370"
                   height="294"
                 />
-                <h3 class="project--title">
-                  Постер <span lang="en">New Orlean vs Golden Star</span>
-                </h3>
-                <p class="project--description">Дизайн</p>
+                <div class="portfolio-card-content">
+                  <h3 class="project--title">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h3>
+                  <p class="project--description">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-card">
@@ -129,10 +133,12 @@
                   width="370"
                   height="294"
                 />
-                <h3 class="project--title">
-                  Ресторан <span lang="en">Seafood</span>
-                </h3>
-                <p class="project--description">Додаток</p>
+                <div class="portfolio-card-content">
+                  <h3 class="project--title">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h3>
+                  <p class="project--description">Додаток</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-card">
@@ -144,10 +150,12 @@
                   width="370"
                   height="294"
                 />
-                <h3 class="project--title">
-                  Проєкт <span lang="en">Prime</span>
-                </h3>
-                <p class="project--description">Маркетинг</p>
+                <div class="portfolio-card-content">
+                  <h3 class="project--title">
+                    Проєкт <span lang="en">Prime</span>
+                  </h3>
+                  <p class="project--description">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-card">
@@ -159,10 +167,12 @@
                   width="370"
                   height="294"
                 />
-                <h3 class="project--title">
-                  Проєкт <span lang="en">Boxes</span>
-                </h3>
-                <p class="project--description">Додаток</p>
+                <div class="portfolio-card-content">
+                  <h3 class="project--title">
+                    Проєкт <span lang="en">Boxes</span>
+                  </h3>
+                  <p class="project--description">Додаток</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-card">
@@ -174,8 +184,12 @@
                   width="370"
                   height="294"
                 />
-                <h3 lang="en">Inspiration has no Borders</h3>
-                <p class="project--description">Веб-сайт</p>
+                <div class="portfolio-card-content">
+                  <h3 class="project--title" lang="en">
+                    Inspiration has no Borders
+                  </h3>
+                  <p class="project--description">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-card">
@@ -187,10 +201,12 @@
                   width="370"
                   height="294"
                 />
-                <h3 class="project--title">
-                  Видання <span lang="en">Limited Edition</span>
-                </h3>
-                <p class="project--description">Дизайн</p>
+                <div class="portfolio-card-content">
+                  <h3 class="project--title">
+                    Видання <span lang="en">Limited Edition</span>
+                  </h3>
+                  <p class="project--description">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-card">
@@ -202,10 +218,12 @@
                   width="370"
                   height="294"
                 />
-                <h3 class="project--title">
-                  Проект <span lang="en">LAB</span>
-                </h3>
-                <p class="project--description">Маркетинг</p>
+                <div class="portfolio-card-content">
+                  <h3 class="project--title">
+                    Проект <span lang="en">LAB</span>
+                  </h3>
+                  <p class="project--description">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-card">
@@ -217,8 +235,10 @@
                   width="370"
                   height="294"
                 />
-                <h3 lang="en">Growing Business</h3>
-                <p class="project--description">Додаток</p>
+                <div class="portfolio-card-content">
+                  <h3 class="project--title" lang="en">Growing Business</h3>
+                  <p class="project--description">Додаток</p>
+                </div>
               </a>
             </li>
           </ul>
@@ -234,7 +254,7 @@
         >
         <address class="address footer-container">
           <ul class="list">
-            <li>
+            <li class="footer-item">
               <a
                 class="link hover-accent footer-adress"
                 href="https://goo.gl/maps/aZbUZKuxEZaQQ34E9"
@@ -243,7 +263,7 @@
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li>
+            <li class="footer-item">
               <a
                 class="link hover-accent footer-mail"
                 href="mailto:info@example.com"

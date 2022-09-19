@@ -28,10 +28,7 @@ footer {
 }
 
 .hidden-header {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+  display: none;
 }
 
 .button {
@@ -80,12 +77,24 @@ footer {
 
 /* Header Styles */
 
-.header {
+.header-border {
   border-bottom: 1px solid #ececec;
 }
 
+.header-item {
+  display: block;
+  padding: 32px 0;
+}
+
+.studio-link {
+  margin-right: 50px;
+}
+
+.portfolio-link {
+  margin-right: 50px;
+}
+
 .header--container {
-  padding: 24px;
   display: flex;
   align-items: center;
 }
@@ -98,8 +107,6 @@ footer {
 .header--navigation {
   display: inherit;
   align-items: center;
-  justify-content: space-between;
-  width: 281px;
 }
 
 .header--contacts {
@@ -109,6 +116,7 @@ footer {
 }
 
 .menu-link {
+  display: inline block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -118,8 +126,12 @@ footer {
 
 .e-mail {
   color: var(--second-text-color);
-  margin-right: 50px;
 }
+
+.mail {
+  padding-right: 50px;
+}
+
 .tel {
   color: var(--second-text-color);
 }
@@ -128,10 +140,13 @@ footer {
 
 .hero {
   background: var(--second-background-color);
+  padding: 200px 0;
 }
 
 .hero-wrapper {
-  padding: 200px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hero-title {
@@ -147,8 +162,6 @@ footer {
 }
 
 .hero--button {
-  display: block;
-  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -166,37 +179,39 @@ footer {
 }
 
 /* Features Styles */
+
+.whatWeDo {
+  padding-bottom: 94px;
+}
+
 .header-whatWeDo {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   text-align: center;
 }
 
 .whatWeDo--list {
-  margin: 50px 0;
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-left: -30px;
-  margin-bottom: 94px;
+  gap: 0 30px;
 }
 
 .whatWeDo--box {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
+}
+
+.features {
+  margin: 94px auto;
 }
 
 .features--list {
-  margin: 94px 0;
+  gap: 0 30px;
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin-left: -30px;
 }
 
 .features--textbox {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
 }
 
 .features--heading {
@@ -223,11 +238,13 @@ footer {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-  padding: 94px 0 50px;
+  margin-bottom: 50px;
 }
 
 .team {
+  padding: 94px 0;
   background: var(--background-color);
+  width: auto;
 }
 
 .team-card {
@@ -235,21 +252,20 @@ footer {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
 
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
+.team-card-content {
+  padding: 30px 0;
 }
 
 .team--list {
-  padding-bottom: 94px;
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-left: -30px;
+  gap: 0 30px;
 }
 
 .team-img {
-  margin-bottom: 30px;
 }
 
 .team--name {
@@ -268,7 +284,6 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  margin-bottom: 30px;
 }
 
 /* Footer Styles */
@@ -276,20 +291,23 @@ footer {
 .footer {
   background: var(--second-background-color);
   padding: 60px 0 60px;
+  width: auto;
 }
 
 .footer-container > ul > li > a {
   display: block;
 }
 
+.footer-item {
+  margin-bottom: 9px;
+}
+
 .footer-adress {
   color: var(--white-color);
-  margin-bottom: 9px;
 }
 
 .footer-mail {
   color: var(--footer-text-color);
-  margin-bottom: 9px;
 }
 
 .footer-tel {
@@ -310,9 +328,9 @@ footer {
 .portfolio-button-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 575px;
-  margin: 94px auto 34px auto;
+  justify-content: center;
+  gap: 0 8px;
+  margin-bottom: 50px;
 }
 
 .portfolio-button {
@@ -337,16 +355,20 @@ footer {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-  margin-bottom: 94px;
+  gap: 30px;
+}
+
+.portfolio-content {
+  padding: 94px 0;
+}
+
+.portfolio-card-content {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .portfolio-card {
-  border: 1px solid #eeeeee;
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
 }
 
 .portfolio-item {
@@ -360,7 +382,6 @@ footer {
 }
 
 .portfolio-img {
-  margin-bottom: 20px;
 }
 
 .project--title {
@@ -369,7 +390,6 @@ footer {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
-  margin-left: 24px;
 }
 
 .project--description {
@@ -378,6 +398,4 @@ footer {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  margin-bottom: 20px;
-  margin-left: 24px;
 }
